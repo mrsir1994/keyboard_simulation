@@ -1,5 +1,5 @@
 from Tkinter import *
-from tkFileDialog import askdirectory, askopenfilename
+#from  import askdirectory, askopenfilename
 import string
 import numpy as np
 
@@ -106,6 +106,7 @@ class key(object):
             color = self.color
         canvas.create_rectangle(self.x0, self.y0, self.x1, self.y1, fill = color)
         canvas.create_text((self.x0+self.x1)/2.0,(self.y0+self.y1)/2.0,text = self.label)
+
 
 
 if __name__ == "__main__":
