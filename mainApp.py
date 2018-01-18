@@ -176,6 +176,7 @@ class mainApp(object):
     def exitEvent(self):
         self.root.destroy()
         self.saveData()
+        self.root2.destroy()
 
 
     def run(self): # run the whole app
