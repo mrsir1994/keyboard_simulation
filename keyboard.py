@@ -36,7 +36,7 @@ class keyboard(object):
 
 
 
-    def convertKbToArray(self, kbStrings):
+    def convertKbToArray(self, kbStrings): # convert the read-in data to numpy.array
         self.kbArray = []
         for line in kbStrings:
             new_row = []
@@ -49,7 +49,7 @@ class keyboard(object):
 
 
 
-    def getCellPosition(self):
+    def getCellPosition(self): # calculate the position of each key in the window
         row_counter = np.array(range(0,self.row_len))
         col_counter = np.array(range(0,self.col_len))
         row_spacing = self.cell_height + self.row_spacing
@@ -59,7 +59,7 @@ class keyboard(object):
         self.row_pos = a[1]
         self.col_pos = a[0]
 
-    def constructKeys(self):
+    def constructKeys(self): # create and store key instances
         self.keys = []
         for i in range(self.row_len):
             new_row = []
@@ -73,12 +73,12 @@ class keyboard(object):
                 new_row.append(key(x0,y0,x1,y1,self.keyColor,self.hoverColor,label,self.margin))
             self.keys.append(new_row)
 
-    def turnOffAllHover(self):
+    def turnOffAllHover(self): # turn off all the light up effect
         for i in range(self.row_len):
             for j in range(self.col_len):
                 self.keys[i][j].hovering = 0
 
-    def draw(self,canvas):
+    def draw(self,canvas): # draw the keys in the window
         for i in range(self.row_len):
             for j in range(self.col_len):
                 self.keys[i][j].draw(canvas)
@@ -87,7 +87,7 @@ class keyboard(object):
 
 
 
-class key(object):
+class key(object): # class of the keys
     def __init__(self,x0,y0,x1,y1,color,hoverColor,label,margin):
         self.x_margin = margin[0]
         self.y_margin = margin[1]

@@ -1,22 +1,20 @@
 from Tkinter import *
 
 root = Tk()
-frame = Frame(root)
-frame.pack()
-
-bottomframe = Frame(root)
-bottomframe.pack()
-
-#redbutton = Button(frame, text="Red", fg="red")
-#redbutton.pack( side = LEFT)
-
-#greenbutton = Button(frame, text="Brown", fg="brown")
-#greenbutton.pack( side = LEFT )
-
-#bluebutton = Button(frame, text="Blue", fg="blue")
-#bluebutton.pack( side = LEFT )
-
-blackbutton = Button(bottomframe, text="Black", fg="black")
-blackbutton.pack( side = BOTTOM,expand = True)
-
-root.mainloop()
+S = Scrollbar(root)
+T = Text(root, height=4, width=50)
+S.pack(side=RIGHT, fill=Y)
+T.pack(side=LEFT, fill=Y)
+S.config(command=T.yview)
+T.config(yscrollcommand=S.set)
+quote = """HAMLET: To be, or not to be--that is the question:
+Whether 'tis nobler in the mind to suffer
+The slings and arrows of outrageous fortune
+Or to take arms against a sea of troubles
+And by opposing end them. To die, to sleep--
+No more--and by a sleep to say we end
+The heartache, and the thousand natural shocks
+That flesh is heir to. 'Tis a consummation
+Devoutly to be wished."""
+T.insert(END, quote)
+mainloop()
