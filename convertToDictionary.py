@@ -18,6 +18,7 @@ def data2List():
         pos[1].append(float(line[1]))
         t.append(float(line[2]))
         cha.append(line[3])
+    print len(cha)
     return (pos,t,cha)
 
 def getChaT(cha,t):
@@ -54,6 +55,7 @@ def list2Dict(pos,t,cha,chaT):
     counter = 0
     last_i = 0
     for i in range(len(t)):
+        if counter >= len(cha): break
         if t[i] >= chaT[counter]:
             d = dict()
             d['x'] = pos[0][last_i:i]
@@ -61,8 +63,9 @@ def list2Dict(pos,t,cha,chaT):
             d['t'] = t[last_i:i]
             d['char'] = cha[counter]
             dList.append(d)
-            if counter >= len(cha): break
             last_i = i
+            counter += 1
+
 
     output = open('myfile.pkl', 'wb')
     pickle.dump(dList, output)

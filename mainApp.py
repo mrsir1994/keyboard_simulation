@@ -1,6 +1,6 @@
 from keyboard import keyboard
 import Tkinter as tk
-from Tkinter import Scrollbar,Text,RIGHT,LEFT,Y,END
+from Tkinter import Scrollbar,Text,RIGHT,LEFT,Y,END,Spinbox
 from animation import Animation
 import time
 
@@ -195,11 +195,22 @@ class mainApp(object):
         self.T.delete(1.0, END)
         self.T.insert(END, self.inputText)
 
+        self.root3 = tk.Tk()
+        self.root3.title('params')
+        w = Spinbox(self.root3, from_=0, to=10)
+        w.pack()
+        w.delete(0, "end")
+        w.insert(0, 4)
+
+        self.hoverlimit = int(w.get())
 
         self.canvas.pack()
         if self.clickOn:
             self.root.bind('<Button-1>',self.clickEvent)
         def timerFired():
+            self.hoverlimit = int(w.get())
+
+
             self.lightUpHovering()
             self.movementLogging()
             if self.hoverOn:
