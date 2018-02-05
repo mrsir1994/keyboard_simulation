@@ -1,8 +1,9 @@
 from keyboard import keyboard
 import Tkinter as tk
-from Tkinter import Scrollbar,Text,RIGHT,LEFT,Y,END,Spinbox
+from Tkinter import Scrollbar,Text,RIGHT,LEFT,Y,END,Spinbox,Label,Entry, StringVar
 from animation import Animation
 import time
+import ttk
 
 class mainApp(object):
     def __init__(self,margin,size,spacing,dt,options,hoverLimit = 4):
@@ -98,6 +99,7 @@ class mainApp(object):
         if keyIndex:
             self.hoverDt = 0
             self.lastHoverKey = (-1, -1)
+            self.progress["value"] = 0
             (i,j) = keyIndex
             inputs = self.kb.keys[i][j].label
             if inputs == 'CAP':
@@ -144,10 +146,18 @@ class mainApp(object):
                         self.inputText += inputs
                     self.hoverDt = 0
                     self.lastHoverKey = (-1,-1)
+                    self.progress["value"] = 0
                     self.T.delete(1.0, END)
                     self.T.insert(END, self.inputText)
                     self.endIndexLogging(inputs)
+            elif(keyIndex == 0):
+                self.hoverDt = 0
+                self.lastHoverKey = (-1, -1)
+                self.progress["value"] = 0
             else:
+                self.hoverDt = 0
+                self.lastHoverKey = (-1, -1)
+                self.progress["value"] = 0
                 self.lastHoverTime = time.time()
                 self.lastHoverKey = (i,j)
 
@@ -196,19 +206,38 @@ class mainApp(object):
         self.T.insert(END, self.inputText)
 
         self.root3 = tk.Tk()
+
+        l = Label(self.root3, text="Hover time Limit:")
+        l.pack()
+
         self.root3.title('params')
         w = Spinbox(self.root3, from_=0, to=10)
         w.pack()
         w.delete(0, "end")
         w.insert(0, 4)
 
-        self.hoverlimit = int(w.get())
+        l2 = Label(self.root3, text="Hover select progress:")
+        l2.pack()
+
+        self.progress = ttk.Progressbar(self.root3, orient="horizontal",
+                                        length=200, mode="determinate")
+        self.progress["value"] = 0
+        self.progress["maximum"] = 10
+
+
+
+        self.progress.pack()
+
+
+
+        #self.hoverlimit = int(w.get())
 
         self.canvas.pack()
         if self.clickOn:
             self.root.bind('<Button-1>',self.clickEvent)
         def timerFired():
             self.hoverlimit = int(w.get())
+            self.progress["value"] = self.progress["maximum"] * self.hoverDt / self.hoverlimit
 
 
             self.lightUpHovering()
