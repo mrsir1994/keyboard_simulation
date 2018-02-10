@@ -260,7 +260,7 @@ if __name__ == '__main__':
     size = (60,60)
     spacing = (10,10)
     dt = 10
-    options = (1,1)
+    options = (1,1) # add toggle
     hoverLimit = 4
     myApp = mainApp(margin,size,spacing,dt,options,hoverLimit)
     myApp.run()
