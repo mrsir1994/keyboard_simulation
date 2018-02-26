@@ -170,6 +170,7 @@ class mainApp(object):
             move = self.mouseMovement[i]
             moveTime = self.mouseMovementTime[i]
             if counter >= len(self.endIndex): counter = len(self.endIndex)-1
+            if counter == -1: break
             if i == self.endIndex[counter]:
                 isEnd = 1
                 symbol = self.clickedKeys[counter]
@@ -188,11 +189,14 @@ class mainApp(object):
     def exitEvent(self):
         self.root.destroy()
         self.saveData()
+        self.root3.destroy()
+        self.root2.destroy()
 
 
     def run(self): # run the whole app
         self.root = tk.Tk()
         self.root2 = tk.Tk()
+        self.root3 = tk.Tk()
         self.root.title('Keyboard Simulation')
 
         # keyboard setup
@@ -217,18 +221,18 @@ class mainApp(object):
         self.T.see(END)
 
 
-        l = Label(self.root, text="Hover time Limit:")
+        l = Label(self.root3, text="Hover time Limit:",state = 'disabled')
         l.pack()
 
-        w = Spinbox(self.root, from_=0, to=10)
+        w = Spinbox(self.root3, from_=0, to=10)
         w.pack()
         w.delete(0, "end")
         w.insert(0, 4)
 
-        l2 = Label(self.root, text="Hover select progress:")
+        l2 = Label(self.root3, text="Hover select progress:")
         l2.pack()
 
-        self.progress = ttk.Progressbar(self.root, orient="horizontal",
+        self.progress = ttk.Progressbar(self.root3, orient="horizontal",
                                         length=200, mode="determinate")
         self.progress["value"] = 0
         self.progress["maximum"] = 10
@@ -238,14 +242,29 @@ class mainApp(object):
         self.progress.pack()
 
 
+        def hv_toggle():
+            if self.hv_btn.config('text')[-1] == "Hover Select: On":
+                self.hv_btn.config(text = "Hover Select: off")
+                self.hoverOn = not self.hoverOn
+            else:
+                self.hv_btn.config(text ="Hover Select: On" )
+                self.hoverOn = not self.hoverOn
+
+        self.hv_btn = tk.Button(self.root3, text="Hover Select: On", command=hv_toggle)
+        self.hv_btn.pack()
+
+
+
 
         #self.hoverlimit = int(w.get())
-
-        self.canvas.pack()
         if self.clickOn:
             self.root.bind('<Button-1>',self.clickEvent)
         def timerFired():
-            self.hoverlimit = int(w.get())
+            try:
+                self.hoverlimit = int(w.get())
+            except:
+                pass
+
             self.progress["value"] = self.progress["maximum"] * self.hoverDt / self.hoverlimit
 
 
@@ -258,7 +277,11 @@ class mainApp(object):
         self.appStartTime = time.time()
         timerFired()
         self.root.protocol("WM_DELETE_WINDOW", self.exitEvent)
+        self.root2.protocol("WM_DELETE_WINDOW", self.exitEvent)
+        self.root3.protocol("WM_DELETE_WINDOW", self.exitEvent)
         self.root.mainloop()  # This call BLOCKS
+        self.root2.mainloop()
+        self.root3.mainloop()
 
 
 
