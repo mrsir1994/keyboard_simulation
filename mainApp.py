@@ -115,6 +115,7 @@ class mainApp(object):
                 self.inputText += inputs
             self.T.delete(1.0,END)
             self.T.insert(END,self.inputText)
+            self.T.see(END)
             self.endIndexLogging(inputs)
 
 
@@ -149,6 +150,7 @@ class mainApp(object):
                     self.progress["value"] = 0
                     self.T.delete(1.0, END)
                     self.T.insert(END, self.inputText)
+                    self.T.see(END)
                     self.endIndexLogging(inputs)
             elif(keyIndex == 0):
                 self.hoverDt = 0
@@ -186,40 +188,47 @@ class mainApp(object):
     def exitEvent(self):
         self.root.destroy()
         self.saveData()
-        self.root2.destroy()
 
 
     def run(self): # run the whole app
         self.root = tk.Tk()
+        self.root2 = tk.Tk()
         self.root.title('Keyboard Simulation')
+
+        # keyboard setup
         self.canvas = tk.Canvas(self.root, width=self.winWidth,
                              height=self.winHeight)
-        self.root2 = tk.Tk()
-        self.root2.title('input')
+        self.canvas.pack(side=LEFT)
+
+        #
         self.S = Scrollbar(self.root2)
         self.T = Text(self.root2, height=4, width=50)
-        self.S.pack(side=RIGHT, fill=Y)
-        self.T.pack(side=LEFT, fill=Y)
+
+
+        self.S.pack(side=RIGHT, fill=Y,expand=True)
+        self.T.pack(side=LEFT, fill=Y,expand=True)
+        #self.S.pack()
+        #self.T.pack()
+
         self.S.config(command=self.T.yview)
         self.T.config(yscrollcommand=self.S.set)
         self.T.delete(1.0, END)
         self.T.insert(END, self.inputText)
+        self.T.see(END)
 
-        self.root3 = tk.Tk()
 
-        l = Label(self.root3, text="Hover time Limit:")
+        l = Label(self.root, text="Hover time Limit:")
         l.pack()
 
-        self.root3.title('params')
-        w = Spinbox(self.root3, from_=0, to=10)
+        w = Spinbox(self.root, from_=0, to=10)
         w.pack()
         w.delete(0, "end")
         w.insert(0, 4)
 
-        l2 = Label(self.root3, text="Hover select progress:")
+        l2 = Label(self.root, text="Hover select progress:")
         l2.pack()
 
-        self.progress = ttk.Progressbar(self.root3, orient="horizontal",
+        self.progress = ttk.Progressbar(self.root, orient="horizontal",
                                         length=200, mode="determinate")
         self.progress["value"] = 0
         self.progress["maximum"] = 10
