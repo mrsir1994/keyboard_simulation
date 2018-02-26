@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6029af4-a642-4203-a9e9-78ccb2b74d2b" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/example1.txt" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/data.txt" afterPath="$PROJECT_DIR$/data.txt" />
       <change beforePath="$PROJECT_DIR$/mainApp.py" afterPath="$PROJECT_DIR$/mainApp.py" />
-      <change beforePath="$PROJECT_DIR$/test.py" afterPath="$PROJECT_DIR$/test.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,11 +19,21 @@
       <file leaf-file-name="mainApp.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mainApp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="583">
-              <caret line="265" column="20" lean-forward="false" selection-start-line="265" selection-start-column="20" selection-end-line="265" selection-end-column="20" />
+            <state relative-caret-position="506">
+              <caret line="264" column="0" lean-forward="true" selection-start-line="264" selection-start-column="0" selection-end-line="264" selection-end-column="0" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="example1.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/example1.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="68" lean-forward="false" selection-start-line="9" selection-start-column="68" selection-end-line="9" selection-end-column="68" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -67,6 +78,7 @@
         <option value="$PROJECT_DIR$/convertToDictionary.py" />
         <option value="$PROJECT_DIR$/KB" />
         <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/example1.txt" />
         <option value="$PROJECT_DIR$/mainApp.py" />
       </list>
     </option>
@@ -289,10 +301,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/example1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="68" lean-forward="false" selection-start-line="9" selection-start-column="68" selection-end-line="9" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mainApp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
-          <caret line="265" column="20" lean-forward="false" selection-start-line="265" selection-start-column="20" selection-end-line="265" selection-end-column="20" />
+        <state relative-caret-position="506">
+          <caret line="264" column="0" lean-forward="true" selection-start-line="264" selection-start-column="0" selection-end-line="264" selection-end-column="0" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>

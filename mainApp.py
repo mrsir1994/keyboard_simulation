@@ -94,6 +94,7 @@ class mainApp(object):
         return 0
 
     def clickEvent(self,event): # when mouse clicked, check if it selected a key and record it
+        if not self.clickOn: return
         (x, y) = (event.x, event.y)
         keyIndex = self.hoveringKey(x,y)
         if keyIndex:
@@ -252,6 +253,23 @@ class mainApp(object):
 
         self.hv_btn = tk.Button(self.root3, text="Hover Select: On", command=hv_toggle)
         self.hv_btn.pack()
+
+
+        def ck_toggle():
+            if self.ck_btn.config('text')[-1] == "Click Select: On":
+                self.ck_btn.config(text = "Click Select: off")
+                self.clickOn = not self.clickOn
+            else:
+                self.ck_btn.config(text ="Click Select: On" )
+                self.clickOn = not self.clickOn
+
+        self.ck_btn = tk.Button(self.root3, text="Click Select: On", command=ck_toggle)
+        self.ck_btn.pack()
+
+
+
+
+
 
 
 
