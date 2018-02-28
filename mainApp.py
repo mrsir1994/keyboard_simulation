@@ -4,9 +4,21 @@ from Tkinter import Scrollbar,Text,RIGHT,LEFT,Y,END,Spinbox,Label,Entry, StringV
 from animation import Animation
 import time
 import ttk
+import argparse
+import os
+from time import gmtime, strftime,localtime
 
 class mainApp(object):
-    def __init__(self,margin,size,spacing,dt,options,hoverLimit = 4):
+    def __init__(self,margin,size,spacing,dt,options,hoverLimit = 4,save_dir = ''):
+
+        self.save_dir = save_dir
+        self.uid = os.getuid
+        self.uname = os.getlogin()
+        self.timemark = strftime("%a, %d %b %Y %H:%M:%S", localtime())
+
+
+
+
         self.hoverlimit = hoverLimit # after hovering hoverlimit time over a key, key is selected
         self.lastHoverTime = time.time() # record the start of hovering on a key
         self.hoverDt = 0 # record how long the mouse is hovering on a key
@@ -165,7 +177,8 @@ class mainApp(object):
                 self.lastHoverKey = (i,j)
 
     def saveData(self): # save all the data inside a file
-        fid = open('data.txt','w')
+        save_dir = self.save_dir + '/data_' + self.timemark + '_@_' + self.uname + '.txt'
+        fid = open(save_dir,'w')
         counter = 0
         for i in range(len(self.mouseMovement)):
             move = self.mouseMovement[i]
@@ -306,12 +319,22 @@ class mainApp(object):
 
 
 if __name__ == '__main__':
+    #parser = argparse.ArgumentParser()
+   # parser.add_argument("save_dir",help = 'the directory to save data')
+   # args = parser.parse_args()
+
+
+
+
+
     margin = (5,5)
     size = (60,60)
     spacing = (10,10)
     dt = 10
     options = (1,1) # add toggle
     hoverLimit = 4
-    myApp = mainApp(margin,size,spacing,dt,options,hoverLimit)
+    #data_save_dir = args.save_dir
+    #print data_save_dir, type(data_save_dir)
+    myApp = mainApp(margin,size,spacing,dt,options,hoverLimit,'data')
     myApp.run()
 
