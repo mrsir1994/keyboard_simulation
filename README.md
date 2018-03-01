@@ -6,4 +6,3 @@ Instruction:
 clone repo and run (python mainApp.py) in terminal
 
 
-
