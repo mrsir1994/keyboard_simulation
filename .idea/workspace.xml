@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6029af4-a642-4203-a9e9-78ccb2b74d2b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/KB" afterPath="$PROJECT_DIR$/KB" />
-      <change beforePath="$PROJECT_DIR$/data.txt" afterPath="$PROJECT_DIR$/data.txt" />
-      <change beforePath="$PROJECT_DIR$/mainApp.py" afterPath="$PROJECT_DIR$/mainApp.py" />
-      <change beforePath="$PROJECT_DIR$/myfile.pkl" afterPath="$PROJECT_DIR$/myfile.pkl" />
-      <change beforePath="$PROJECT_DIR$/test.py" afterPath="$PROJECT_DIR$/test.py" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="mainApp.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mainApp.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mainApp.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="420">
-              <caret line="28" column="35" lean-forward="true" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+              <caret line="28" column="35" lean-forward="false" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -32,8 +28,18 @@
       <file leaf-file-name="example1.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/example1.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="143" lean-forward="false" selection-start-line="9" selection-start-column="143" selection-end-line="9" selection-end-column="143" />
+            <state relative-caret-position="60">
+              <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="example2" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/example2">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="65" lean-forward="false" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -53,7 +59,7 @@
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" column="56" lean-forward="true" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="56" />
+              <caret line="6" column="56" lean-forward="false" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -77,10 +83,11 @@
         <option value="$PROJECT_DIR$/keyboard.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/convertToDictionary.py" />
-        <option value="$PROJECT_DIR$/example1.txt" />
         <option value="$PROJECT_DIR$/KB" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/mainApp.py" />
+        <option value="$PROJECT_DIR$/example1.txt" />
+        <option value="$PROJECT_DIR$/example2" />
       </list>
     </option>
   </component>
@@ -286,14 +293,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/example1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="143" lean-forward="false" selection-start-line="9" selection-start-column="143" selection-end-line="9" selection-end-column="143" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/KB">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -305,7 +304,7 @@
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="56" lean-forward="true" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="56" />
+          <caret line="6" column="56" lean-forward="false" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="56" />
           <folding />
         </state>
       </provider>
@@ -313,10 +312,26 @@
     <entry file="file://$PROJECT_DIR$/mainApp.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
-          <caret line="28" column="35" lean-forward="true" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+          <caret line="28" column="35" lean-forward="false" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example2">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="65" lean-forward="false" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
+          <folding />
         </state>
       </provider>
     </entry>

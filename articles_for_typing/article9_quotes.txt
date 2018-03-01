@@ -1,0 +1,186 @@
+Don't worry about what anybody else is going to do. The best way to
+predict the future is to invent it.
+-- Alan Kay
+
+Premature optimization is the root of all evil (or at least most of it)
+in programming.
+-- Donald Knuth
+
+Lisp has jokingly been called "the most intelligent way to misuse a
+computer". I think that description is a great compliment because it
+transmits the full flavor of liberation: it has assisted a number of our
+most gifted fellow humans in thinking previously impossible thoughts.
+-- Edsger Dijkstra, CACM, 15:10
+
+Keep away from people who try to belittle your ambitions. Small people
+always do that, but the really great make you feel that you, too, can
+become great.
+-- Mark Twain
+
+What Paul does, and does very well, is to take ideas and concepts that
+are beautiful in the abstract, and brings them down to a real world
+level. That's a rare talent to find in writing these days.
+-- Jeff "hemos" Bates, Director, OSDN; Co-evolver, Slashdot
+
+Since programmers create programs out of nothing, imagination is our
+only limitation. Thus, in the world of programming, the hero is the one
+who has great vision. Paul Graham is one of our contemporary heroes. He
+has the ability to embrace the vision, and to express it plainly. His
+works are my favorites, especially the ones describing language design.
+He explains secrets of programming, languages, and human nature that can
+only be learned from the hacker experience. This book shows you his
+great vision, and tells you the truth about the nature of hacking.
+-- Yukihiro "Matz" Matsumoto, creator of Ruby
+
+To follow the path:
+    look to the master,
+    follow the master,
+    walk with the master,
+    see through the master,
+    become the master.
+-- Modern zen Poem
+
+No problem should ever have to be solved twice.
+-- Eric S. Raymond, How to become a hacker
+
+Attitude is no substitute for competence.
+-- Eric S. Raymond, How to become a hacker
+
+It is said that the real winner is the one who lives in today but able
+to see tomorrow.
+-- Juan Meng, Reviewing "The future of ideas" by Lawrence Lessig
+
+Fools ignore complexity. Pragmatists suffer it. Some can avoid it.
+Geniuses remove it.
+-- Alan J. Perlis (Epigrams in programming)
+
+A year spent in artificial intelligence is enough to make one believe in
+God.
+-- Alan J. Perlis (Epigrams in programming)
+
+Dealing with failure is easy: Work hard to improve. Success is also easy
+to handle: You've solved the wrong problem. Work hard to improve.
+-- Alan J. Perlis (Epigrams in programmi ng)
+
+Within a computer natural language is unnatural.
+-- Alan J. Perlis (Epigrams in programming)
+
+You think you know when you learn, are more sure when you can write,
+even more when you can teach, but certain when you can program.
+-- Alan J. Perlis (Epigrams in programming)
+
+Adapting old programs to fit new machines usually means adapting new
+machines to behave like old ones.
+-- Alan J. Perlis (Epigrams in programming)
+
+A little learning is a dangerous thing.
+-- Alexander Pope
+
+Computer science education cannot make anybody an expert programmer any
+more than studying brushes and pigment can make somebody an expert
+painter.
+-- Eric Raymond
+
+Einstein argued that there must be simplified explanations of nature,
+because God is not capricious or arbitrary.
+-- Frederick P. Brooks, No Sliver Bullet.
+
+Students should be evaluated on how well they can achieve the goals they
+strived to achieve within a realistic context. Students need to learn to
+do things, not know things.
+-- Roger Schank, Engines for Education
+
+We remember what we learn when we care about performing better and when
+we believe that what we have been asked to do is representative of
+reality.
+-- Roger Schank, Engines for Education
+
+There really is no learning without doing.
+-- Roger Schank, Engines for Education
+
+We really have to get over the idea that some stuff is just worth
+knowing even if you never do anything with it. Human memories happily
+erase stuff that has no purpose, so why try to fill up children's heads
+with such stuff?
+-- Roger Schank, Engines for Education
+
+La tactique, c'est ce que vous faites quand il y a quelque chose ¨¤
+faire; la strat¨¦gie, c'est ce que vous faites quand il n'y a rien ¨¤
+faire.
+-- Xavier Tartacover
+
+The only problems we can really solve in a satisfactory manner are those
+that finally admit a nicely factored solution.
+-- E. W. Dijkstra, The humble programmer
+
+The best way to learn to live with our limitations is to know them.
+--E. W. Dijkstra, The humble programmer
+
+This challenge, viz. the confrontation with the programming task, is so
+unique that this novel experience can teach us a lot about ourselves. It
+should deepen our understanding of the processes of design and creation,
+it should give us better control over the task of organizing our
+thoughts. If it did not do so, to my taste we should no deserve the
+computer at all!  It has allready taught us a few lessons, and the one I
+have chosen to stress in this talk is the following. We shall do a much
+better programming job, provided that we approach the task with a full
+appreciation of its tremenduous difficulty, provided that we stick to
+modest and elegant programming languages, provided that we respect the
+intrinsec limitations of the human mind and approach the task as Very
+Humble Programmers.
+-- E. W. Dijkstra, The humble programmer
+
+Ce n'est que par les relations qu'on entretient entre nos diff¨¦rentes
+connaissances qu'elles nous restent accessibles.
+-- Shnuup, sur l'hypertexte (SELFHTML -> Introduction -> Definitions sur l'hypertexte)
+
+We now come to the decisive step of mathematical abstraction: we forget
+about what the symbols stand for. ...[The mathematician] need not be
+idle; there are many operations which he may carry out with these
+symbols, without ever having to look at the things they stand for.
+-- Hermann Weyl, The Mathematical Way of Thinking
+
+An expert is, according to my working definition "someone who doesn't
+need to look up answers to easy questions".
+-- Eric Lippert.
+
+The programmer must seek both perfection of part and adequacy of
+collection.
+-- Alan J. Perlis
+
+Thus, programs must be written for people to read, and only incidentally
+for machines to execute.
+-- Alan J. Perlis
+
+We control complexity by building abstractions that hide details when
+appropriate. We control complexity by establishing conventional
+interfaces that enable us to construct systems by combining standard,
+well-understood pieces in a ``mix and match'' way. We control complexity
+by establishing new languages for describing a design, each of which
+emphasizes particular aspects of the design and deemphasizes others.
+-- Alan J. Perlis
+
+The acts of the mind, wherein it exerts its power over simple ideas, are
+chiefly these three: 1. Combining several simple ideas into one compound
+one, and thus all complex ideas are made. 2. The second is bringing two
+ideas, whether simple or complex, together, and setting them by one
+another so as to take a view of them at once, without uniting them into
+one, by which it gets all its ideas of relations. 3. The third is
+separating them from all other ideas that accompany them in their real
+existence: this is called abstraction, and thus all its general ideas
+are made.
+-- John Locke, An Essay Concerning Human Understanding (1690)
+
+Lisp programmers know the value of everything but the cost of nothing.
+-- Alan J. Perlis
+
+An interpreter raises the machine to the level of the user program; a
+compiler lowers the user program to the level of the machine language.
+-- SICP
+
+Everything should be made as simple as possible, but no simpler.
+-- Albert Einstein
+
+The great dividing line between success and failure can be expressed in
+five words: "I did not have time."
+-- WestHost weekly newsletter 14 Feb 2003
